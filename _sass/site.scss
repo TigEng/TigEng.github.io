@@ -197,6 +197,95 @@ div.ui-datepicker{
   background-color:#00B2EE;
   padding: 100px 0px 100px 0px;
 }
+/* Book page style
+*====================================*/
+.main-section{
+  margin-top:60px;
+  .introduction-header{
+    font-size:1.75em;
+    margin-top: 1.275em;
+    margin-bottom:.85em;
+  }
+  .inner-contents{
+    margin-top:0px;
+    margin-bottom:.85em;
+  }
+  section{
+    margin: 0;
+    padding: 5px 15px;
+    background: #fff;
+    border-radius: 2px;
+    line-height: 1.7;
+    font-size: 1.6rem;
+  }
+  section.page-contents-section a{
+    color:#4183c4;
+    text-decoration: none;
+    background:0 0;
+  }
+  .page-contents-section h1, 
+  .page-contents-section h2, 
+  .page-contents-section h3, 
+  .page-contents-section h4{
+      margin-top:1.275em;
+      margin-bottom:.85em;
+  }
+  .page-contents-section h1{
+    font-size:2em;
+  }
+  .page-contents-section h2{
+    font-size:1.75em;
+  }
+  .page-contents-section h3{
+    font-size:1.5em;
+  }
+  .page-contents-section h4{
+    font-size:1.25em;
+  }
+  .course h1{
+    border-bottom:1px solid;
+  }
+  .chapter-section .header-inner-section{
+    display: inline-block;
+    border-bottom: 3px solid;
+  }
+  a.anchor-section::before {
+    content: '#';
+  }
+  a.hide{
+    visibility: hidden;
+  }
+  a.hasAnchor{
+    visibility:visible;
+  }
+  a.anchor-section{
+    margin-left:12px;
+ 
+  }
+  .header-inner-section{
+    padding-right: .2em;
+    font-weight: 500;
+  }
+  .task-item{
+      .task-item-section {
+        margin-left:15px;
+      strong{
+        font-weight: 700;
+      }
+    }
+
+  }
+}
+.goals-section{
+  .course-outcomes-inner-section{
+    margin-left:35px;
+    p.list-sub-title{
+     font-weight: 700;
+     margin-bottom:5px;
+    }
+  }
+}
+
 
 
  

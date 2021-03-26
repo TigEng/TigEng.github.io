@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 	
 	displayIconOnMobile();
 
-
+    hasAnchorClass();
 });
 
 //############################################################################
@@ -45,5 +45,20 @@ function displayIconOnMobile(){
         }
         
         
+    });
+}
+//############################################################################
+//Setting the Anchor link visibility
+//############################################################################
+function hasAnchorClass(){
+    jQuery('.main-header').hover(function(){
+      var hasnchorClassExisted = jQuery(this).find('a').hasClass('hasAnchor');
+      if(hasnchorClassExisted){
+        jQuery(this).find('a').removeClass('hasAnchor');
+        jQuery(this).find('a').addClass('hide');
+      }else{
+        jQuery(this).find('a').removeClass('hide');
+        jQuery(this).find('a').addClass('hasAnchor');
+      }
     });
 }
