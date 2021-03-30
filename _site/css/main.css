@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure { margin-bottom: 
 /* Images and Figures ============================================== */
 img { max-width: 100%; vertical-align: middle; }
 
-figure > img { display: block; }
+figure > img { display: block; margin: auto; }
 
 figcaption { font-size: 16.11px; }
 
@@ -389,6 +389,12 @@ ol.rs-carousel-pagination { position: absolute; z-index: 998; top: 82%; left: 50
 .main-section .task-item .task-item-section { margin-left: 15px; }
 
 .main-section .task-item .task-item-section strong { font-weight: 700; }
+
+.main-section .task-item .task-item-section .content-image-section { display: grid; grid-template-rows: 200px; grid-template-columns: 60% 40%; }
+
+@media screen and (max-width: 700px) { .main-section .task-item .task-item-section .content-image-section { display: flex; flex-direction: column; } }
+
+.main-section .task-item .task-item-section .content-image-section .content-only { margin-right: 30px; }
 
 .goals-section .course-outcomes-inner-section { margin-left: 35px; }
 

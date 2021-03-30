@@ -272,7 +272,20 @@ div.ui-datepicker{
       strong{
         font-weight: 700;
       }
+      .content-image-section{
+        display:grid;
+        grid-template-rows: 200px;
+        grid-template-columns: 60% 40%;
+        @include media-query($on-palm) {
+          display:flex;
+          flex-direction:column;
+        }
+        .content-only{
+          margin-right:30px;
+        }
+      }
     }
+    
 
   }
 }
