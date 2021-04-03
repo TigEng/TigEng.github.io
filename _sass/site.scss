@@ -272,7 +272,7 @@ div.ui-datepicker{
       strong{
         font-weight: 700;
       }
-      .content-image-section{
+      .content-image-section, .content-image-section-large-grid, .content-image-section-medium-grid {
         display:grid;
         grid-template-rows: 200px;
         grid-template-columns: 60% 40%;
@@ -284,6 +284,16 @@ div.ui-datepicker{
           margin-right:30px;
         }
       }
+      .content-image-section-large-grid{
+        grid-template-rows: 350px;
+      }
+      .content-image-section-medium-grid{
+        grid-template-rows: 160px;
+      }
+      .content-image-section{
+        grid-template-rows: 200px;
+      }
+      
     }
     
 
