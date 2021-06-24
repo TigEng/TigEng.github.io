@@ -200,7 +200,7 @@ div.ui-datepicker{
 /* Book page style
 *====================================*/
 .main-section{
-  margin-top:60px;
+  padding-left:10px;
   .introduction-header{
     font-size:1.75em;
     margin-top: 1.275em;
@@ -266,6 +266,9 @@ div.ui-datepicker{
     padding-right: .2em;
     font-weight: 500;
   }
+  .sub-main-header{
+    margin-left:15px;
+  }
   .task-item{
       .task-item-section {
         margin-left:15px;
@@ -273,15 +276,16 @@ div.ui-datepicker{
         font-weight: 700;
       }
       .content-image-section, .content-image-section-large-grid, .content-image-section-medium-grid {
-        display:grid;
-        grid-template-rows: 200px;
-        grid-template-columns: 60% 40%;
-        @include media-query($on-palm) {
           display:flex;
           flex-direction:column;
-        }
-        .content-only{
+           .content-only{
           margin-right:30px;
+        }
+        .image-only{
+          align-self:center;
+        }
+        p.caption{
+          color: #777;
         }
       }
       .content-image-section-large-grid{
@@ -307,6 +311,37 @@ div.ui-datepicker{
      margin-bottom:5px;
     }
   }
+}
+
+/* Book page style
+*====================================*/
+.book-summary-section{
+   position: absolute;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    z-index: 1;
+    width: 300px;
+    color: #364149;
+    background: #fafafa;
+    padding-top:55px;
+    .chapter-link{
+      padding:10px 15px;
+      text-overflow:ellipsis;
+      overflow:hidden;
+      white-space:nowrap;
+      color:#364149;
+    }
+    .chapter-link:hover, li.active{
+      color: #009fd5;
+    }
+    .show-side-bar{
+      left:0px;
+    }
+}
+.book-contents{
+  position:absolute;
+  left:300px;
 }
 
 

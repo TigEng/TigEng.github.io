@@ -26,6 +26,7 @@ jQuery(document).ready(function(){
 	displayIconOnMobile();
 
     hasAnchorClass();
+    ToggleSideBar();
 });
 
 //############################################################################
@@ -61,4 +62,17 @@ function hasAnchorClass(){
         jQuery(this).find('a').addClass('hasAnchor');
       }
     });
+}
+//############################################################################
+//Toggle side bar
+//############################################################################
+function ToggleSideBar(){
+  jQuery('.toggle-side-bar').click(function(){
+    var hasnchorClassExisted = jQuery(this).find('a').hasClass('show-side-bar');
+    if(hasnchorClassExisted){
+      jQuery(this).find('a').removeClass('show-side-bar');
+    }else{
+      jQuery(this).find('a').addClass('show-side-bar');
+    }
+  });
 }

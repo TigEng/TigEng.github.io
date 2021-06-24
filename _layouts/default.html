@@ -15,7 +15,12 @@
           </div>
         {% endif %}
       <div class="wrapper">
-        {{ content }}
+        <div class="book-summary-section">
+          {% include book-summary.html %}
+        </div>
+        <div class="book-contents">
+          {{ content }}
+        </div>
       </div>
 
     </div>

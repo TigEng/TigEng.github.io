@@ -55,7 +55,7 @@ pre { border-radius: 3px; padding: 8px 12px; overflow-x: scroll; background-colo
 pre > code { background-color: #F5F5F5; border: 0; padding-right: 0; padding-left: 0; }
 
 /* Wrapper ============================================== */
-.wrapper { max-width: -webkit-calc(1000px - (30px * 2)); max-width: calc(1000px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+.wrapper { margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
 
 @media screen and (max-width: 700px) { .wrapper { max-width: -webkit-calc(1000px - (30px)); max-width: calc(1000px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
@@ -352,7 +352,7 @@ ol.rs-carousel-pagination { position: absolute; z-index: 998; top: 82%; left: 50
 
 /* Book page style
 *====================================*/
-.main-section { margin-top: 60px; }
+.main-section { padding-left: 10px; }
 
 .main-section .introduction-header { font-size: 1.75em; margin-top: 1.275em; margin-bottom: .85em; }
 
@@ -386,15 +386,19 @@ ol.rs-carousel-pagination { position: absolute; z-index: 998; top: 82%; left: 50
 
 .main-section .header-inner-section { padding-right: .2em; font-weight: 500; }
 
+.main-section .sub-main-header { margin-left: 15px; }
+
 .main-section .task-item .task-item-section { margin-left: 15px; }
 
 .main-section .task-item .task-item-section strong { font-weight: 700; }
 
-.main-section .task-item .task-item-section .content-image-section, .main-section .task-item .task-item-section .content-image-section-large-grid, .main-section .task-item .task-item-section .content-image-section-medium-grid { display: grid; grid-template-rows: 200px; grid-template-columns: 60% 40%; }
-
-@media screen and (max-width: 700px) { .main-section .task-item .task-item-section .content-image-section, .main-section .task-item .task-item-section .content-image-section-large-grid, .main-section .task-item .task-item-section .content-image-section-medium-grid { display: flex; flex-direction: column; } }
+.main-section .task-item .task-item-section .content-image-section, .main-section .task-item .task-item-section .content-image-section-large-grid, .main-section .task-item .task-item-section .content-image-section-medium-grid { display: flex; flex-direction: column; }
 
 .main-section .task-item .task-item-section .content-image-section .content-only, .main-section .task-item .task-item-section .content-image-section-large-grid .content-only, .main-section .task-item .task-item-section .content-image-section-medium-grid .content-only { margin-right: 30px; }
+
+.main-section .task-item .task-item-section .content-image-section .image-only, .main-section .task-item .task-item-section .content-image-section-large-grid .image-only, .main-section .task-item .task-item-section .content-image-section-medium-grid .image-only { align-self: center; }
+
+.main-section .task-item .task-item-section .content-image-section p.caption, .main-section .task-item .task-item-section .content-image-section-large-grid p.caption, .main-section .task-item .task-item-section .content-image-section-medium-grid p.caption { color: #777; }
 
 .main-section .task-item .task-item-section .content-image-section-large-grid { grid-template-rows: 350px; }
 
@@ -405,5 +409,17 @@ ol.rs-carousel-pagination { position: absolute; z-index: 998; top: 82%; left: 50
 .goals-section .course-outcomes-inner-section { margin-left: 35px; }
 
 .goals-section .course-outcomes-inner-section p.list-sub-title { font-weight: 700; margin-bottom: 5px; }
+
+/* Book page style
+*====================================*/
+.book-summary-section { position: absolute; top: 0; left: -300px; bottom: 0; z-index: 1; width: 300px; color: #364149; background: #fafafa; padding-top: 55px; }
+
+.book-summary-section .chapter-link { padding: 10px 15px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; color: #364149; }
+
+.book-summary-section .chapter-link:hover, .book-summary-section li.active { color: #009fd5; }
+
+.book-summary-section .show-side-bar { left: 0px; }
+
+.book-contents { position: absolute; left: 300px; }
 
 /*# sourceMappingURL=main.css.map */

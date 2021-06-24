@@ -1,0 +1,24 @@
+docs_list_title: ACME Documentation
+contents:
+
+- title: Part 1
+  subfolderitems:
+    - chapter: chapter 1
+      subsubfolderitems:
+        - title: ItConcepts
+          url:  itconcepts.html
+
+    - chapter: chapter 2
+
+- title: Part 2
+  url: configuration.html
+
+- title: Part 3
+  url: deployment.html
+
+- title: Part 4
+  url: Part 4
+
+- title: Part 5
+  url: Part 5
+
